@@ -5,3 +5,9 @@ class Cell:
         self.y=y
         self.domain = domain
         self.value=value
+    
+    def isEmpty(self):
+        return self.value == '_'
+
+    def __str__(self) -> str:
+        return f"☣️x: {self.x} ☣️y: {self.y} 🧞d: {'-'.join(self.domain)} 🚂v: {self.value}"
